@@ -91,5 +91,5 @@ const onboardUser = async(email, phoneNumber, firstName, lastName, trackingRefer
 
 # Acknowledgements
 
-- [Kuda Bank Team ](https://kudabank.com)
-- Ebidhaa Services Tech Team
+- [Kuda Bank Team](https://kudabank.com)
+- [Ebidhaa Services Tech Team](https://ebidhaang.org/)
