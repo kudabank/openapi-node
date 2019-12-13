@@ -21,7 +21,7 @@ const publicKey = fs.readFileSync("./kuda.public.xml"); // or path to your kuda 
 const privateKey = fs.readFileSync("./path-to-private-key.xml"); // or path to your kuda kuda private key
 const clientKey = "name-of-private-key-file"; // name of private key file without the .xml suffix (extension)
 
-const kuda = Kuda("./index")({
+const kuda = Kuda({
   publicKey,
   privateKey,
   clientKey
