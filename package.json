@@ -1,0 +1,35 @@
+{
+  "name": "kuda-node",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "lint": "./node_modules/.bin/eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kudabank/openapi-node.git"
+  },
+  "keywords": [],
+  "author": "Kuda Bank <tech@kudabank.com> (https://kudabank.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kudabank/openapi-node/issues"
+  },
+  "homepage": "https://github.com/kudabank/openapi-node#readme",
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "node-jsencrypt": "^1.0.0",
+    "rsa-xml": "^0.1.5",
+    "shortid": "^2.2.15"
+  }
+}
