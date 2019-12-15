@@ -19,7 +19,9 @@ function Kuda (param) {
 
   const { clientKey } = param
   
-  if (!publicKey || !privateKey || !clientKey) return console.log('Error: publicKey, privateKey, clientKey are required!')
+  if (!publicKey) return console.log('Error: publicKey is required!')
+  if (!privateKey) return console.log('Error: privateKey is required!')
+  if (!clientKey) return console.log('Error: clientKey is required!')
   
   const password = `${clientKey}-${shortid.generate().substring(0, 5)}`
 
