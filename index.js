@@ -13,7 +13,16 @@ const { RSAEncrypt, RSADecrypt } = require('./algorithms/rsa')
 function Kuda (param) {
   if (!param) return console.log('Error: publicKey, privateKey, clientKey are required!')
 
-  const { publicKey, privateKey, clientKey } = param
+  let { publicKey, privateKey } = param
+  publicKey = publicKey.toString()
+  privateKey = privateKey.toString()
+
+  const { clientKey } = param
+  
+  if (!publicKey) return console.log('Error: publicKey is required!')
+  if (!privateKey) return console.log('Error: privateKey is required!')
+  if (!clientKey) return console.log('Error: clientKey is required!')
+  
   const password = `${clientKey}-${shortid.generate().substring(0, 5)}`
 
   /**
