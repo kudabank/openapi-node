@@ -1,5 +1,5 @@
 const axios = require('axios')
-const nanoid = require('nanoid')
+const { nanoid } = require('nanoid')
 
 // import algo-methods
 const { aesEncrypt, aesDecrypt } = require('./algorithms/aes')
