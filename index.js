@@ -49,6 +49,8 @@ function Kuda (param) {
       const encryptedPassword = await RSAEncrypt(password, publicKey)
 
       // make encrypted api request to Kuda Bank
+      //Test url below
+      //https://kuda-openapi-uat.kudabank.com/v1
       const { data: encryptedResponse } = await axios.post('https://kuda-openapi.kuda.com/v1', {
         data: encryptedPayload
       }, {
