@@ -1,5 +1,5 @@
 const axios = require('axios')
-const shortid = require('shortid')
+const { nanoid } = require('nanoid')
 
 // import algo-methods
 const { aesEncrypt, aesDecrypt } = require('./algorithms/aes')
@@ -18,12 +18,12 @@ function Kuda (param) {
   privateKey = privateKey.toString()
 
   const { clientKey } = param
-  
+
   if (!publicKey) return console.log('Error: publicKey is required!')
   if (!privateKey) return console.log('Error: privateKey is required!')
   if (!clientKey) return console.log('Error: clientKey is required!')
-  
-  const password = `${clientKey}-${shortid.generate().substring(0, 5)}`
+
+  const password = `${clientKey}-${nanoid(5)}`
 
   /**
    * makes an encrypted call to Kuda API
