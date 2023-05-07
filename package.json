@@ -27,7 +27,7 @@
     "eslint-plugin-standard": "^4.0.1"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.2",
     "node-jsencrypt": "^1.0.0",
     "rsa-xml": "^0.1.5",
     "shortid": "^2.2.15"
